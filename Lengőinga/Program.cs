@@ -9,6 +9,22 @@ namespace Lengőinga
 {
     class Program
     {
+        static char command;
+
+        static void Main(string[] args)
+        {
+            //Képernyő törlése
+            Console.Clear();  
+            
+            //Fejléc  
+            hw_front();
+
+            //Logic
+            program();
+
+            Console.ReadKey();
+        }
+
         static void hw_front()
         {
             int i;
@@ -44,11 +60,9 @@ namespace Lengőinga
             Console.Write("                               Kérem nyomja meg az ENTER gombot!");
         }
 
-        static char ch;
-
-        static void Main(string[] args)
-        {
-            Console.Clear();    //Képernyő törlése
+        static void program()
+        {       
+            //Menu    
             Console.WriteLine("\n---Fonálinga jellemzése---\n");
             Console.WriteLine("\nLengésidő..................T");
             Console.WriteLine("\nGyorsulás..................A");
@@ -56,34 +70,42 @@ namespace Lengőinga
             Console.WriteLine("\nKilépés..................Q\n");
             do
             {
-                Console.Write("\r\nKérem válasszon parancsot ! :");
-                int temp = Console.Read();
-                ch = Convert.ToChar(temp); //Karakter konverzió
-                ch = Char.ToUpper(ch); // Nagybetű konverzó
+                Console.Write("\r\nKérem válasszon parancsot! ");
+                command = Char.ToUpper(Convert.ToChar(Console.ReadLine())); // Nagybetű konverzó
             }
-            while (ch != 'T' && ch != 'A' && ch != 'L' && ch != 'Q');
+            while (command != 'T' && command != 'A' && command != 'L' && command != 'Q');
 
-            switch (ch)      //Elágazás a választott betű szerint
+            //Elágazás a választott betű szerint
+            switch (command)      
             {
-                case 'T': Console.WriteLine("\nLengésidő kiszámítás:");
-                    double l, leng;
-                    string st;
-                    Console.Write("Fonalhossz(m):");
-                    st = Console.ReadLine();
-                    l = Convert.ToDouble(st);
-                    leng = 2 * 3.14 * Math.Sqrt(l) / 9.81;
-                    Console.WriteLine("\nLengési idő:{0}", leng);
+                case 'T':                    
+                    Console.WriteLine("\nLengési idő: {0:N2}s", countT());
                     break; 
 
-                case 'A': Console.WriteLine("\nÉrintő irányú gyorsulás kiszámítása:"); break;
-                case 'L': Console.WriteLine("\nFonal hosszának kiszámítása:"); break;
+                case 'A':
+                    Console.WriteLine("\nÉrintő irányú gyorsulás kiszámítása:");
+                    Console.Write("Fonalhossz(m): ");
+                    double l = Convert.ToDouble(Console.ReadLine());
+                    double leng = 2 * 3.1415 * Math.Sqrt(l / 9.81);
+                    Console.WriteLine("\nLengési idő: {0:N2}s", leng);
+                    break;
+                case 'L':
+                    Console.WriteLine("\nFonal hosszának kiszámítása:");
+                    break;
                 default:
                     break;
             }
-            Console.ReadKey();
+            
+            
         }
 
-        
+        static double countT()
+        {
+            Console.WriteLine("\nLengésidő kiszámítás: ");
+            Console.Write("Fonalhossz(m): ");
+            double l = Convert.ToDouble(Console.ReadLine());
+            return 2 * 3.1415 * Math.Sqrt(l / 9.81);
+        }
 
     }
 }

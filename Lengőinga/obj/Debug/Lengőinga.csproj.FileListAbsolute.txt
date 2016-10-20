@@ -4,3 +4,6 @@ C:\Users\Kátai\Pictures\egyetem\hf prog\Lengőinga\Lengőinga\bin\Debug\Lengői
 C:\Users\Kátai\Pictures\egyetem\hf prog\Lengőinga\Lengőinga\obj\Debug\Lengőinga.csprojResolveAssemblyReference.cache
 C:\Users\Kátai\Pictures\egyetem\hf prog\Lengőinga\Lengőinga\obj\Debug\Lengőinga.exe
 C:\Users\Kátai\Pictures\egyetem\hf prog\Lengőinga\Lengőinga\obj\Debug\Lengőinga.pdb
+C:\Users\Kátai\Source\Repos\HF1\Lengőinga\bin\Debug\Lengőinga.exe.config
+C:\Users\Kátai\Source\Repos\HF1\Lengőinga\obj\Debug\Lengőinga.exe
+C:\Users\Kátai\Source\Repos\HF1\Lengőinga\obj\Debug\Lengőinga.pdb

@@ -1,0 +1,6 @@
+C:\Users\Kátai\Source\Repos\HF1\Lengőinga\bin\Debug\Lengőinga.exe.config
+C:\Users\Kátai\Source\Repos\HF1\Lengőinga\bin\Debug\Lengőinga.exe
+C:\Users\Kátai\Source\Repos\HF1\Lengőinga\bin\Debug\Lengőinga.pdb
+C:\Users\Kátai\Source\Repos\HF1\Lengőinga\obj\Debug\Lengoinga.csprojResolveAssemblyReference.cache
+C:\Users\Kátai\Source\Repos\HF1\Lengőinga\obj\Debug\Lengőinga.exe
+C:\Users\Kátai\Source\Repos\HF1\Lengőinga\obj\Debug\Lengőinga.pdb
