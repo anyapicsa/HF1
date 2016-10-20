@@ -79,18 +79,14 @@ namespace Lengőinga
             switch (command)      
             {
                 case 'T':                    
-                    Console.WriteLine("\nLengési idő: {0:N2}s", countT());
+                    Console.WriteLine("\nLengésidő: {0:N2}s", countT());
                     break; 
 
                 case 'A':
-                    Console.WriteLine("\nÉrintő irányú gyorsulás kiszámítása:");
-                    Console.Write("Fonalhossz(m): ");
-                    double l = Convert.ToDouble(Console.ReadLine());
-                    double leng = 2 * 3.1415 * Math.Sqrt(l / 9.81);
-                    Console.WriteLine("\nLengési idő: {0:N2}s", leng);
+                    Console.WriteLine("\nÉrintő irányú gyorsulás: {0:N2}m/s^2", countA());
                     break;
                 case 'L':
-                    Console.WriteLine("\nFonal hosszának kiszámítása:");
+                    Console.WriteLine("\nFonalhossz: {0:N2}m", countL());
                     break;
                 default:
                     break;
@@ -105,6 +101,24 @@ namespace Lengőinga
             Console.Write("Fonalhossz(m): ");
             double l = Convert.ToDouble(Console.ReadLine());
             return 2 * 3.1415 * Math.Sqrt(l / 9.81);
+        }
+
+        static double countA()
+        {
+            Console.WriteLine("\nÉrintő irányú gyorsulás kiszámítása:");
+            Console.Write("Szögelfordulás(rad): ");
+            double fi = Convert.ToDouble(Console.ReadLine());
+            return Math.Abs(9.81 * Math.Sin(fi));
+            
+        }
+
+        static double countL()
+        {
+            Console.WriteLine("\nFonál hosszának kiszíámítása:");
+            Console.Write("Lengési idő(s): ");
+            double t = Convert.ToDouble(Console.ReadLine());
+            return (t*t*9.81)/(4*3.1415*3.1415);
+
         }
 
     }
