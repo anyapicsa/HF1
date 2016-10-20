@@ -1,0 +1,6 @@
+C:\Users\Kátai\Pictures\egyetem\hf prog\Lengőinga\Lengőinga\bin\Debug\Lengőinga.exe.config
+C:\Users\Kátai\Pictures\egyetem\hf prog\Lengőinga\Lengőinga\bin\Debug\Lengőinga.exe
+C:\Users\Kátai\Pictures\egyetem\hf prog\Lengőinga\Lengőinga\bin\Debug\Lengőinga.pdb
+C:\Users\Kátai\Pictures\egyetem\hf prog\Lengőinga\Lengőinga\obj\Debug\Lengőinga.csprojResolveAssemblyReference.cache
+C:\Users\Kátai\Pictures\egyetem\hf prog\Lengőinga\Lengőinga\obj\Debug\Lengőinga.exe
+C:\Users\Kátai\Pictures\egyetem\hf prog\Lengőinga\Lengőinga\obj\Debug\Lengőinga.pdb
